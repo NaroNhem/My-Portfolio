@@ -1,16 +1,20 @@
+@font-face {
+    font-family: 'Roboto-light';
+    src: url(Roboto/Roboto-Light.ttf);
+}
 .navbar {
     display: flex;
     justify-content: center;
     height:5em;
     margin:0%;
-    position: sticky;
+    position: fixed;
     width: 100%;
     background-color: #04031C;
 }
 
 body {
     margin: 0%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto-regular ', sans-serif;
 }
 html {
     margin: 0%;
@@ -32,6 +36,7 @@ html {
     background-color: #04031C;
     color:  white;
     padding-bottom: 2%;
+    padding-top: 4%;
 }
 p {
     margin: 20px;
@@ -56,5 +61,93 @@ bold {
     flex-direction: column;
     padding-bottom: 1em;
 }
+main {
+    padding: 1em;
+}
+
+.about {
+    text-align: center;
+    color: #04031C;
+    font-size: 1.3em;
+    margin: auto;
+    width: 30%;
+}
+
+.about h2 {
+    font-family: 'Roboto-Light', sans-serif;
+}
 
 
+.skills {
+    background-color: #04031C;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    margin: auto;
+    height: auto;
+    padding-top: 2em;
+}
+
+.skills h1 {
+    font-size: 2em;
+}
+
+.skillContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    height: 9em;
+
+}
+
+.skillCard {
+    height: 2em;
+    width: 2em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+}
+
+.skillHead {
+    width: 60px;
+}
+
+#bottomCont {
+    border-bottom: 2px solid white;
+}
+
+.projectCont {
+    background-color: #04031C;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    margin: auto;
+    height: auto;
+    padding-top: 2em;
+}
+
+.project h1 {
+    font-size: 2em;
+}
+
+.projectCard {
+    height: 6em;
+    width:50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projectSum {
+    width: 50%;
+    text-align: left;
+}

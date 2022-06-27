@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <div class="navbar">
             <ul class="nav-links">
-                <li>ABOUT</li>
-                <li>SKILLS</li>
-                <li>PROJECTS</li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#project">PROJECTS</a></li>
                 <li>CONTACT ME</li>
             </ul>
         </div>
@@ -22,7 +25,7 @@
         <div class="intro">
             <div class="greet">
                 <p><em class="hi">Hi, my name is </em><bold>Justinaro.</bold></p>
-                <p class = "job-title">Junior Front-End Developer.</p>
+                <p class = "job-title">Front-End Developer</p>
             </div>
             <div class="photo">
 
@@ -30,11 +33,59 @@
         </div>
     </header>
     <main>
-
+        <div class ="about" id="about">
+            <h1>About Me</h1>
+            <h2><em>I am a Front-end Developer located in <span style="color:#FFB591 ;">Philadelphia, PA.</span></em></h2>
+            <div class="summary">
+                <p>Highly motivated with a passion for learning all things tech. 
+                   I started coding in university and have since then developed a passion for the tech
+                   industry. As a developer I am always looking to learn and apply new technologies to my projects.
+                    I am always driven and ready for any challenges.</p>
+            </div>
+        </div>
     </main>
     <section>
+        <div class="skills" id="skills">
+            <h1>Skills</h1>
+            <div class="skillContainer">
+                <div class="skillCard">
+                    <div class="skillItem"><img src="images/JavaScript-logo.png" alt ="JavaScript-logo"></div>
+                    <div class="skillHead">Javascript</div>
+                </div>
+                <div class="skillCard">
+                    <div class="skillItem"><img src="images/1024px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo"></div>
+                    <div class="skillHead">HTML5</div>
+                </div>
+                <div class="skillCard">
+                    <div class="skillItem"><img src="images/cssLogo.png" alt="CSS Logo"></div>
+                    <div class="skillHead">CSS3</div>
+                </div>
+            </div>
+            <div class="skillContainer" id="bottomCont">
+                <div class="skillCard">
+                    <div class="skillItem"><img src ="images/Git-Icon-1788C.png" alt="Git Logo"></div>
+                    <div class="skillHead">Git</div>
+                </div>
+                <div class="skillCard">
+                    <div class="skillItem"><img src ="images/python.png" alt="Python-logo"></div>
+                    <div class="skillHead">Python</div>
+                </div>
+                <div class="skillCard">
+                    <div class="skillItem"><img src= "images/Bootstrap_logo.svg.png" alt="BootstrapLogo"></div>
+                    <div class="skillHead">Bootstrap</div>
+                </div>
+            </div>
+        </div>
 
     </section>
+    <projects class="project" id="project">
+        <div class="projectCont">
+            <h1>Projects</h1>
+            <div class="projectCard"><a href="https://naronhem.github.io/landing-page/">Landing Page</a><span class="projectSum">A landing page showcasing HTML and CSS</span></div>
+            <div class="projectCard"><a href="https://naronhem.github.io/R-P-S/">Rock Paper Scissors</a><span class="projectSum">Project showcasing basic Javascript, CSS, and HTML.</span></div>
+            <div class="projectCard"><a href="https://naronhem.github.io/Etch-a-Sketch/">Etch-a-Sketch</a><span class="projectSum">Project showcasing Javascript, CSS, and HTML.</span></div>
+        </div>
+    </projects>
     <footer>
 
     </footer>
