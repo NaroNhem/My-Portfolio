@@ -15,6 +15,7 @@
 body {
     margin: 0%;
     font-family: 'Roboto-regular ', sans-serif;
+    background-color: #04031C;
 }
 html {
     margin: 0%;
@@ -29,6 +30,24 @@ html {
     color:  white;
 }
 
+a:link {
+    text-decoration: none;
+}
+a.nav:hover {
+    color: #FFB591;
+}
+.social {
+    font-size: large;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 10%;
+    align-items: center;
+    color:  white;
+}
+.fa-brands:hover {
+    transform: scale(1.2);
+}
 .intro {
     display: flex;
     height: auto;
@@ -63,6 +82,7 @@ bold {
 }
 main {
     padding: 1em;
+    background-color: white;
 }
 
 .about {
@@ -86,6 +106,7 @@ main {
     margin: auto;
     height: auto;
     padding-top: 2em;
+    margin-bottom: 1em;
 }
 
 .skills h1 {
@@ -119,9 +140,11 @@ img {
 .skillHead {
     width: 60px;
 }
+.whiteLine {
 
-#bottomCont {
-    border-bottom: 2px solid white;
+    border: 1px solid white;
+    width: 20%;
+    margin: auto;
 }
 
 .projectCont {
@@ -132,6 +155,9 @@ img {
     margin: auto;
     height: auto;
     padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project h1 {
@@ -145,9 +171,35 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: white;
+    color: black;
+    padding: 1%;
+    border-radius: 10px;
+    margin: 1%;
 }
 
+.project a {
+    color: #04031C;
+}
 .projectSum {
     width: 50%;
     text-align: left;
+}
+.button {
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1.2em;
+    background-color: white;
+}
+.button:hover {
+    background-color: #04031ce7;
+    color: white;
+    cursor: pointer;
+}
+.skill {
+    color:#FFB591;
+    font-weight: bold;
+}
+a {
+    color: white;
 }

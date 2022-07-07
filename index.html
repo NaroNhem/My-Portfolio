@@ -9,15 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d82782994.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
         <div class="navbar">
             <ul class="nav-links">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#project">PROJECTS</a></li>
+                <li><a class="nav" href="#about">ABOUT</a></li>
+                <li><a class="nav" href="#skills">SKILLS</a></li>
+                <li><a class="nav" href="#project">PROJECTS</a></li>
                 <li>CONTACT ME</li>
+            </ul>
+            <ul class="social">
+                <li><a class="soc" href="https://github.com/NaroNhem" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-xl"></i></a></li>
+                <li><a class="soc" href="https://www.linkedin.com/in/justinaro-nhem/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
             </ul>
         </div>
     </nav>
@@ -76,14 +81,14 @@
                 </div>
             </div>
         </div>
-
     </section>
+    <div class="whiteLine"></div>
     <projects class="project" id="project">
         <div class="projectCont">
             <h1>Projects</h1>
-            <div class="projectCard"><a href="https://naronhem.github.io/landing-page/">Landing Page</a><span class="projectSum">A landing page showcasing HTML and CSS</span></div>
-            <div class="projectCard"><a href="https://naronhem.github.io/R-P-S/">Rock Paper Scissors</a><span class="projectSum">Project showcasing basic Javascript, CSS, and HTML.</span></div>
-            <div class="projectCard"><a href="https://naronhem.github.io/Etch-a-Sketch/">Etch-a-Sketch</a><span class="projectSum">Project showcasing Javascript, CSS, and HTML.</span></div>
+            <div class="projectCard"><a href="https://naronhem.github.io/landing-page/" target="_blank" rel="noopener noreferrer"><button class="button">Landing Page</button></a><span class="projectSum">A landing page showcasing <span class="skill">HTML</span> and <span class="skill">CSS</span></span></div>
+            <div class="projectCard"><a href="https://naronhem.github.io/R-P-S/" target="_blank" rel="noopener noreferrer"><button class="button">Rock Paper Scissors</button></a><span class="projectSum">Rock Paper Scissor game project with basic <span class="skill">Javascript</span> functions, <span class="skill">CSS</span>, and <span class="skill">HTML</span>.</span></div>
+            <div class="projectCard"><a href="https://naronhem.github.io/Etch-a-Sketch/" target="_blank" rel="noopener noreferrer"><button class="button">Etch-a-Sketch</button></a><span class="projectSum">Project showcasing <span class="skill">Javascript</span>, <span class="skill">CSS</span>, and <span class="skill">HTML</span>.</span></div>
         </div>
     </projects>
     <footer>
