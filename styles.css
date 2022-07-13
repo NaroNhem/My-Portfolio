@@ -35,6 +35,7 @@ a:link {
 }
 a.nav:hover {
     color: #FFB591;
+    transition: all ease-in-out 0.2s
 }
 .social {
     font-size: large;
@@ -46,7 +47,18 @@ a.nav:hover {
     color:  white;
 }
 .fa-brands:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    color: #04031c;
+}
+
+.soc {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.soc:hover {
+    background: white;
+    
 }
 .intro {
     display: flex;
@@ -158,6 +170,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2em;
 }
 
 .project h1 {
@@ -178,6 +191,13 @@ img {
     margin: 1%;
 }
 
+.projectCard:hover{
+    background-color: #080B35;
+    color: white;
+    border: 3px solid #FFB591;
+    transition: all ease-in-out 0.2s
+}
+
 .project a {
     color: #04031C;
 }
@@ -185,21 +205,82 @@ img {
     width: 50%;
     text-align: left;
 }
-.button {
-    border: 1px solid black;
-    border-radius: 4px;
-    font-size: 1.2em;
-    background-color: white;
-}
-.button:hover {
-    background-color: #04031ce7;
-    color: white;
-    cursor: pointer;
-}
+
 .skill {
     color:#FFB591;
     font-weight: bold;
 }
 a {
     color: white;
+}
+
+.contact-page {
+    height: 7em;
+    background-color: #04031C;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    margin: auto;
+    height: auto;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.contactCont {
+    text-align: left;
+    padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	background: white;
+	border-radius: 4px;
+    color:#04031C;
+}
+
+label {
+    font-size: 0.85em;
+    margin-left: 12px;
+}
+
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #04031C;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+	background: #FFB591;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+input[type=submit]:hover {
+	background: #04031C;
+}
+
+.footer {
+    color:white;
+    text-align: center;
+}
+
+.footerNav {
+    text-align: center;
+}
+
+.footerList {
+    text-align: left;
 }
