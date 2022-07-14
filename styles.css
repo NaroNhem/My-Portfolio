@@ -37,6 +37,43 @@ a.nav:hover {
     color: #FFB591;
     transition: all ease-in-out 0.2s
 }
+
+.download{
+    margin: auto;
+}
+#downloadBtn {
+    min-width: 130px;
+    height: 31px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid white;
+    color: black;
+  }
+  #downloadBtn:hover {
+    color: white;
+  }
+  #downloadBtn:hover:after {
+    height: 100%;
+  }
+  #downloadBtn:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background: #04031c;
+  }
 .social {
     font-size: large;
     list-style: none;
@@ -277,10 +314,3 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-.footerNav {
-    text-align: center;
-}
-
-.footerList {
-    text-align: left;
-}
