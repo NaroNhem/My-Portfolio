@@ -50,7 +50,7 @@ a.nav:hover {
     position: relative;
     display: inline-block;
     outline: none;
-    border-radius: 5px;
+    border-radius: 4px;
     z-index: 0;
     background: #fff;
     overflow: hidden;
@@ -231,7 +231,7 @@ img {
 .projectCard:hover{
     background-color: #080B35;
     color: white;
-    border: 3px solid #FFB591;
+    border: 3px solid white;
     transition: all ease-in-out 0.2s
 }
 
