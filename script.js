@@ -8,10 +8,10 @@ let submit = document.getElementById("submit");
 // }
 
 
-// let isEmail = (email) => {
-//     let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-//     return regex.test(String(email).toLowerCase());
-//    }
+let isEmail = (email) => {
+    let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+    return regex.test(String(email).toLowerCase());
+   }
 
 // let fieldValidation = (field, validationFunction) => {
 //     if (field == null) return false;
@@ -35,11 +35,15 @@ let submit = document.getElementById("submit");
 //    }
 
 let formValidate = () => {
+    email = isEmail(fields.email);
     for (let value in fields){
         if (fields[value] == "") {
             alert("Please fill in all fields before submitting")
-        }
-        return fields[value];
+            break;
+        }else if (!email) {
+            alert("Please enter a valid email.")
+            break;
+        } 
     }
 }
 
