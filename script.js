@@ -1,40 +1,61 @@
-let fields = [];
+let fields = {};
 
 let submit = document.getElementById("submit");
 
-let isNotEmpty = (value) => {
-    if (value == null || typeof value  == 'undefined' ) return false;
-    return (value.length > 0)
-}
+// let isNotEmpty = (value) => {
+//     if (value == null || typeof value  == 'undefined' ) return false;
+//     return (value.length > 0)
+// }
 
-let isNumber = (num) => {
-    return (num.length > 0) && !isNaN(num);
-}
 
-let isEmail = (email) => {
-    let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-    return regex.test(String(email).toLowerCase());
-   }
+// let isEmail = (email) => {
+//     let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+//     return regex.test(String(email).toLowerCase());
+//    }
 
-let fieldValidation = (field, validationFunction) => {
-    if (field == null) return false;
+// let fieldValidation = (field, validationFunction) => {
+//     if (field == null) return false;
 
-    let isFieldValid = validationFunction(field.value)
-    if (!isFieldValid) {
-        field.className = 'placeholderRed';
-    } else {
-        field.className = '';
+//     let isFieldValid = validationFunction(field.value)
+//     if (!isFieldValid) {
+//         field.className = 'placeholderRed';
+//     } else {
+//         field.className = '';
+//     }
+//     return isFieldValid;
+// }
+
+// function isValid() {
+//     var valid = true;
+//     valid &= fieldValidation(fields.first, isNotEmpty);
+//     // valid &= fieldValidation(fields.last, isNotEmpty);
+//     // valid &= fieldValidation(fields.email, isEmail);
+//     // valid &= fieldValidation(fields.message, isNotEmpty);
+//     return valid;
+//    }
+
+let formValidate = () => {
+    for (let value in fields){
+        if (fields[value] == "") {
+            alert("Please fill in all fields before submitting")
+        }
+        return fields[value];
     }
-    return isFieldValid;
 }
 
+// let validation = () => {
+//     formValidate(fields.first)
+//     formValidate(fields.last)
+//     formValidate(fields.email)
+//     formValidate(fields.message)
+// }
 submit.addEventListener("click", (event) => {
-    const first = document.querySelector("#firstName").value;
-    const last = document.querySelector("#lastName").value;
-    const email = document.querySelector("#email").value;
-    const message = document.querySelector("#message").value;
-    fields.push(first,last,email,message)
-
+    fields.first = document.querySelector("#firstName").value;
+    fields.last = document.querySelector("#lastName").value;
+    fields.email = document.querySelector("#email").value;
+    fields.message = document.querySelector("#message").value;
+    formValidate();
+    // alert("Your message has been sent. Thank you!");
     console.log(fields)
 })
 
