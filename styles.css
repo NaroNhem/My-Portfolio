@@ -12,16 +12,19 @@
     background-color: #04031C;
 }
 .photo {
+    padding-top: 5%;
     display: flex;
     justify-content: center;
     width: 80%;
+    height: 100%;
 }
 .headshot {
     height: auto;
     width: 40%;
     background: rgb(255,181,145);
-    background: linear-gradient(13deg, rgba(255,181,145,1) 2%, rgb(14, 3, 28) 72%);
+    background: linear-gradient(13deg, rgba(255,181,145,1) 2%, rgba(4,3,28,1) 72%);
     border-radius: 50px;
+    overflow: hidden;
 }
 body {
     margin: 0%;
